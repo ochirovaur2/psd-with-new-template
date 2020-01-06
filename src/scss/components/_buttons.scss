@@ -1,0 +1,53 @@
+.btn{
+	display: inline-block;
+	background: $color-grey-dark-1;
+	color: $color-light-1;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	padding: 1.8rem 2rem;
+	border-radius: 3px;
+    transition: color 1s;
+    position: relative;
+    /* btn__primary */
+
+	&__primary{
+		
+		background: $btn-primary-bg;
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 2.6rem;
+		text-transform: uppercase;
+		letter-spacing: 0.27px;
+		padding: 2.8rem 8.1rem;
+		
+	}
+	&__text{
+		position: relative;
+		z-index: 10;
+	}
+    //////// Hover effects
+	
+
+    //////// Hover effects::before
+
+    &::before{
+    	content: "";
+    	position: absolute;
+    	top: 0;
+		left: 0;
+		transform: scaleY(0);
+		height: 100%;
+       	width: 5px;
+		background: #d84848;
+		z-index: 1;
+		transition: transform .3s,
+                    width .4s cubic-bezier(1,0,0,1) .3s,
+                    background-color .1s;
+
+    }
+    &:hover::before {
+		transform: scale(1);
+		width: 100%;
+	}
+	
+}

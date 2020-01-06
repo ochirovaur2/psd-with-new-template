@@ -1,0 +1,10 @@
+.section-box{
+	padding: 12rem 1rem 13rem;
+	text-align: center;
+	/* .section-box__p */
+
+	&__p {
+		max-width: 60rem;
+		margin: 0 auto 7rem;
+	}
+}

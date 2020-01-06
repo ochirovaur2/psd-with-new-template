@@ -1,0 +1,112 @@
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1rem;
+	
+	/* .cards__card-box */
+
+	&__card-box {
+		width: calc(100% / 12 * 3 - 2rem);
+		margin: 0 1rem;
+		
+	}
+
+	/* .cards__img-box */
+
+	&__img-box {
+		
+	}
+
+	/* .cards__img */
+
+	&__img {
+		height: 12rem;
+		margin-bottom: 6rem;
+	}
+	
+	/* .cards__photo */
+
+	&__photo{
+		width: 20rem;
+		margin-bottom: 4rem;
+	}
+
+	/* .cards__heading */
+
+	&__heading {
+		
+		/* .cards__heading_service */
+
+		&_service{
+			margin-bottom: 2.7rem;
+		}
+
+		/* .cards__heading_names */
+		
+		&_names{
+			margin-bottom: 1.5rem;
+		}
+	}
+
+
+	/* .cards__post */
+
+	&__post {
+		font-size: 1.6rem;
+		font-weight: 400;
+		letter-spacing: 0.32px;
+		margin-bottom: 2.6rem;
+		&_lightblue {
+			color: #30bae7;
+
+		}
+	}
+
+
+
+	/* .cards__p */
+
+	&__p {
+		
+		font-size: 1.6rem;
+		font-weight: 300;
+		letter-spacing: 0.32px;
+	}
+
+	@media only screen and (max-width: $bp-medium){
+
+		&__card-box{
+			//////////////////////////////////
+			// It looks like a bug in IE with calc
+			// So instead of using "calc(100% / 12 * 6 - 3rem);"
+			// We use: "width: calc(100% / 12 * 5.5 - 3rem);"
+			// Bug is explained here: 
+			// https://stackoverflow.com/questions/21942183/multiline-flexbox-in-ie11-calculating-widths-incorrectly/21950351#21950351 
+			width: calc(100% / 12 * 5.5 - 2rem);
+			margin-bottom: 5rem;
+			position: relative;
+			padding-bottom: 5rem;
+			&::before{
+				content: "";
+				position: absolute;
+				width: 50%;
+				height: 2px;
+				background: lightgray;
+				left: 50%;
+				transform: translateX(-50%);
+				bottom: 0;
+			}
+		}
+	}
+	@media only screen and (max-width: $bp-small){
+		margin: 0 auto;
+
+		&__card-box{
+			width: calc(100% - 2rem);
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+

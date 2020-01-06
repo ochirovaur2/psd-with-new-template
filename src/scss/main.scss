@@ -1,0 +1,33 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+@import "abstracts/animations";
+
+// @import 'vendors/bootstrap';
+@import "base/reset";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "pages/home";
+
+@import "components/container";
+@import "components/section-box";
+@import "components/popup";
+@import "components/box";
+@import "components/cards";
+// @import "components/grid";
+@import "components/buttons";
+@import "components/nav";
+
+@import "layout/header";
+// @import "layout/footer";
+// @import "layout/skills";
+
+// @import 'themes/theme';
+
+
+
+
+
+
