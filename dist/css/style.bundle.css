@@ -555,17 +555,33 @@ ol.counter {
   /* .cards__card-box */
   /* .cards__img-box */
   /* .cards__img */
+  /* .cards__photo */
   /* .cards__heading */
+  /* .cards__post */
   /* .cards__p */ }
   .cards__card-box {
     width: calc(100% / 12 * 3 - 2rem);
     margin: 0 1rem; }
-  .cards__img-box {
-    margin-bottom: 6rem; }
   .cards__img {
-    height: 12rem; }
+    height: 12rem;
+    margin-bottom: 6rem; }
+  .cards__photo {
+    width: 20rem;
+    margin-bottom: 4rem; }
   .cards__heading {
-    margin-bottom: 2.7rem; }
+    /* .cards__heading_service */
+    /* .cards__heading_names */ }
+    .cards__heading_service {
+      margin-bottom: 2.7rem; }
+    .cards__heading_names {
+      margin-bottom: 1.5rem; }
+  .cards__post {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    margin-bottom: 2.6rem; }
+    .cards__post_lightblue {
+      color: #30bae7; }
   .cards__p {
     font-size: 1.6rem;
     font-weight: 300;
