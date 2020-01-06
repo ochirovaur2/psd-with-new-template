@@ -6,6 +6,12 @@
 	/* .cards__card-box */
 
 	&__card-box {
+		//////////////////////////////////
+		// It looks like a bug in IE with calc
+		// So instead of using "calc(100% / 12 * 3 - 3rem);"
+		// We use: "width: calc(100% / 12 * 2.9 - 3rem);"
+		// Bug is explained here: 
+		// https://stackoverflow.com/questions/21942183/multiline-flexbox-in-ie11-calculating-widths-incorrectly/21950351#21950351
 		width: calc(100% / 12 * 2.9 - 2rem);
 		margin: 0 1rem;
 		
